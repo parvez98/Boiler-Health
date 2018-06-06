@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8cb8ff"
+    android:id="@+id/foodone"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/right_arrow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/chart"
+        android:layout_width="wrap_content"
+        android:layout_height="247dp"
+        android:layout_marginTop="91dp"
+        android:src="@drawable/food_chart"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="113dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/protein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protein"
+            android:background="@drawable/custom_button"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fruits"
+            android:background="@drawable/custom_button"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vegetables"
+            android:background="@drawable/custom_button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_button"
+            android:text="grains" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:text="Dairy" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="40dp"
+    android:paddingTop="60dp"
+    tools:context="edu.purdue.parvezs.boileruphealth.Tab2">
+
+    <ImageButton
+        android:id="@+id/food"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/food"
+        android:background="@drawable/button_background"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:id="@+id/health"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/health"
+        android:background="@drawable/button_background"
+        android:layout_toRightOf="@+id/food"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:id="@+id/mentalHealth"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/mental_health"
+        android:layout_below="@+id/food"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_background"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:id="@+id/medicine"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/medicine"
+        android:layout_below="@+id/food"
+        android:layout_toRightOf="@+id/mentalHealth"
+        android:background="@drawable/button_background"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+</RelativeLayout>

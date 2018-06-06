@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="40dp"
+    android:paddingTop="60dp"
+    tools:context="edu.purdue.parvezs.boileruphealth.Tab2">
+
+    <ImageButton
+        android:id="@+id/men"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/men"
+        android:background="@drawable/button_background"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:id="@+id/women"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/women"
+        android:background="@drawable/button_background"
+        android:layout_toRightOf="@+id/men"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:id="@+id/precaution"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/precautions"
+        android:layout_below="@+id/men"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_background"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:id="@+id/localHelp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/men"
+        android:layout_toEndOf="@+id/precaution"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_background"
+        android:scaleType="fitXY"
+        android:src="@drawable/local_help" />
+
+</RelativeLayout>
