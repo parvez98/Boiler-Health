@@ -6,13 +6,9 @@
     android:id="@+id/healthone"
     android:background="#878">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@drawable/right_arrow"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"/>
-
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </RelativeLayout>
